@@ -10,7 +10,7 @@ try:
         type = int.from_bytes(file.read(1), byteorder="big")
         unsigned_byte_case = 8
         if type != unsigned_byte_case:
-            print("Note: This implementation only idx with unsigned byte type.")
+            print("Note: This implementation only supports idx with unsigned byte type.")
 
         dim = int.from_bytes(file.read(1), byteorder="big")
         if dim != 3:
